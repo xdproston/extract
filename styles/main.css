@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    --bg-color: #ebebeb;
+    --text-color: #1e1e1e;
+    --accent-color: #006eff;
+    --cards-color: #ffffff40;
+    --cards-in-main-color: rgba(30, 30, 30, 0.075);
+}
+
+::selection {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-flow: column nowrap;
+    background-color: var(--bg-color);
+}
+
+video {
+    opacity: 0.2;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+}
+
+main {
+    margin: 6px;
+    padding: 6px;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow-y: auto;
+
+    background-color: var(--cards-color);
+    border-radius: 16px;
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--text-color) transparent;
+}
+
+main>.card {
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    background-color: var(--cards-color);
+    border-radius: 16px;
+    padding: 6px;
+    margin: 6px;
+    justify-content: space-around;
+}
+
+nav>.header {
+    font-size: 48px;
+    user-select: none;
+}
+
+nav>div {
+    display: flex;
+    gap: 32px;
+}
+
+nav>div>h1 {
+    font-size: 16px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+footer {
+    margin: 6px;
+    padding: 6px;
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 16px;
+    background-color: var(--cards-color);
+    text-align: center;
+}
+
+footer>div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-optical-sizing: auto;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    cursor: default;
+    z-index: 1;
+}

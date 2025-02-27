@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>extract - ИИ в образовании</title>
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/specify.css">
+    <script src="scripts/main.js"></script>
+</head>
+
+<body>
+    <video id="video-bg" src="videos/bg.mp4" autoplay muted loop></video>
+
+    <nav>
+        <h1 class="header">extract</h1>
+        <div>
+            <h1>
+                <input type="radio" name="nav-group" id="introduction" value="intro" onchange="update_content()"
+                    checked>
+                <label for="introduction">Введение</label>
+            </h1>
+
+            <h1>
+                <input type="radio" name="nav-group" id="advantages" value="adva" onchange="update_content()">
+                <label for="advantages">Преимущества</label>
+            </h1>
+
+            <h1>
+                <input type="radio" name="nav-group" id="use" value="use" onchange="update_content()">
+                <label for="use">Применение</label>
+            </h1>
+
+            <h1>
+                <input type="radio" name="nav-group" id="impact" value="impact" onchange="update_content()">
+                <label for="impact">Влияние</label>
+            </h1>
+
+            <h1>
+                <input type="radio" name="nav-group" id="disadvantages" value="disadva" onchange="update_content()">
+                <label for="disadvantages">Проблемы</label>
+            </h1>
+
+            <h1>
+                <input type="radio" name="nav-group" id="conclusion" value="concl" onchange="update_content()">
+                <label for="conclusion">Заключение</label>
+            </h1>
+        </div>
+    </nav>
+
+    <main id="content">
+        <div id="card" class="card introduction show">
+            <div>
+                <h1>Введение</h1>
+                <p>
+                    <span class="ai">ИИ</span> стремительно меняет сферу образования, помогая сделать обучение более<br>
+                    персонализированным и эффективным. Современные технологии позволяют адаптировать учебные<br>
+                    программы под индивидуальные потребности учащихся, автоматизировать рутинные задачи<br>
+                    преподавателей и повышать доступность знаний.
+                </p>
+            </div>
+
+            <div>
+                <h2>Что же всё-таки такое <span class="ai">ИИ</span>?</h2>
+                <p>
+                    Искусственный интеллект (<span class="ai">ИИ</span>) — это область компьютерных наук,
+                    направленная<br>
+                    на создание систем, способных выполнять задачи, которые обычно требуют человеческого интеллекта.
+                </p>
+            </div>
+
+            <a class="hf nextbtn" onclick="toAdva()">
+                <img src="images/ra-icon.png" alt="" height="32" width="32">
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Страница была создана для IX конкурса: “Сделай сайт своими руками” на тему — “ИИ в образовании”
+        </p>
+        <p>
+            Автор: Исайкин Артём Вадимович <span style="opacity: 0.5;">(xdproston)</span>
+        </p>
+
+        <div>
+            <a class="hf" href="https://t.me/xdproston" target="_blank" title="тг">
+                <img src="images/tg-icon.png" alt="" height="32" width="32">
+            </a>
+
+            <a class="hf" href="https://school68.edu-penza.ru/" target="_blank" title="школа">
+                <img src="images/school-icon.png" alt="" height="32" width="32">
+            </a>
+
+            <a class="hf" href="https://github.com/xdproston" target="_blank" title="гит">
+                <img src="images/github-icon.png" alt="" height="32" width="32">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

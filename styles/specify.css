@@ -1,0 +1,121 @@
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.show {
+    animation: show 0.25s forwards;
+}
+
+.hide {
+    animation: hide 0.25s forwards;
+}
+
+.nextbtn {
+    position: absolute;
+    right: 64px;
+}
+
+.backbtn {
+    position: absolute;
+    left: 64px;
+}
+
+.hf {
+    filter: grayscale(100);
+
+    transition: filter 0.15s ease-in-out;
+}
+
+.hf:hover {
+    cursor: pointer;
+    filter: none;
+}
+
+.hf>img {
+    pointer-events: none;
+    user-select: none;
+}
+
+.ai {
+    color: var(--accent-color);
+}
+
+main>.introduction {
+    gap: 64px;
+}
+
+main>.introduction,
+main>.use,
+main>.impact,
+main>.conclusion {
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+
+main>.advantages,
+main>.disadvantages {
+    align-items: center;
+    justify-content: center;
+
+    gap: 128px;
+}
+
+main>.advantages ul,
+main>.disadvantages ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 12px;
+}
+
+main>.advantages li,
+main>.disadvantages li {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 12px;
+    border: 1px solid var(--text-color);
+    border-radius: 16px;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    text-decoration: none;
+    user-select: none;
+
+    transition: color 0.15s ease-in-out, transform 0.15s ease-in-out;
+}
+
+label:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+label:active {
+    transform: scale(1);
+}
+
+input[type='radio']:checked + label {
+    color: var(--accent-color);
+}
