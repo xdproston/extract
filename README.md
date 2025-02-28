@@ -1,2 +1,2 @@
 # extract
-page for the competition
+page for the competition IX (http://cspnz.ru/)
