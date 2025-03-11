@@ -71,14 +71,31 @@ advantages = `
 
 use = `
         <div id="card" class="card use show">
-            <h1>Применение <span class="ai">ИИ</span></h1>
-            <p>
-                <span class="ai">ИИ</span> уже активно используется в образовании. Адаптивные учебные системы<br>
-                анализируют успехи учеников и предлагают персонализированные задания. Виртуальные репетиторы обучают<br>
-                в режиме реального времени, а голосовые помощники помогают быстро находить нужную информацию. Кроме<br>
-                того, <span class="ai">ИИ</span> анализирует пробелы в знаниях студентов и предлагает индивидуальные<br>
-                рекомендации.
-            </p>
+            <div>
+                <h1>Применение <span class="ai">ИИ</span></h1>
+                <p>
+                    <span class="ai">ИИ</span> уже активно используется в образовании. Адаптивные учебные системы<br>
+                    анализируют успехи учеников и предлагают персонализированные задания. Виртуальные репетиторы
+                    обучают<br>
+                    в режиме реального времени, а голосовые помощники помогают быстро находить нужную информацию.
+                    Кроме<br>
+                    того, <span class="ai">ИИ</span> анализирует пробелы в знаниях студентов и предлагает
+                    индивидуальные<br>
+                    рекомендации.
+                </p>
+            </div>
+
+            <div>
+                <h2>Примеры</h2>
+                Создавать презентации можно с помощью <a href="https://gamma.app" target="_blank">gamma.app</a>, <a
+                    href="https://miro.com" target="_blank">miro.com</a>.<br>
+                Для текстовых запросов стоит использовать <a href="https://ya.ru/ai/gpt" target="_blank">YandexGPT</a>,
+                <a href="https://www.perplexity.ai" target="_blank">perplexity.ai</a>, <a href="https://chatgpt.com"
+                    target="_blank">chatgpt.com</a>.<br>
+                Для генерация видео и картинок: <a href="https://shedevrum.ai" target="_blank">shedevrum.ai</a>, <a
+                    href="https://www.sberbank.com/promo/kandinsky/" target="_blank">kandinsky</a>, <a
+                    href="https://klingai.com" target="_blank">klingai.com</a>.
+            </div>
 
             <a class="hf backbtn" onclick="toAdva()">
                 <img src="images/la-icon.png" alt="" height="32" width="32">
@@ -186,27 +203,27 @@ function update_content() {
                     content.innerHTML = introduction
                     break
                 }
-    
+
                 case 'adva': {
                     content.innerHTML = advantages
                     break
                 }
-    
+
                 case 'use': {
                     content.innerHTML = use
                     break
                 }
-    
+
                 case 'impact': {
                     content.innerHTML = impact
                     break
                 }
-                
+
                 case 'disadva': {
                     content.innerHTML = disadvantages
                     break
                 }
-    
+
                 case 'concl': {
                     content.innerHTML = conclusion
                     break

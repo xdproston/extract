@@ -112,3 +112,13 @@ footer>div {
     cursor: default;
     z-index: 1;
 }
+
+a {
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
