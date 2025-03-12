@@ -173,12 +173,21 @@ disadvantages = `
 
 conclusion = `
         <div id="card" class="card conclusion show">
-            <h1>Заключение</h1>
-            <p>
-                <span class="ai">ИИ</span> играет всё более значимую роль в образовании, улучшая доступ к знаниям и повышая их качество. Однако<br>
-                для эффективного внедрения технологий важно учитывать как их преимущества, так и возможные риски,<br>
-                сохраняя баланс между цифровыми инструментами и традиционными методами обучения.
-            </p>
+            <div>
+                <h1>Заключение</h1>
+                <p>
+                    <span class="ai">ИИ</span> играет всё более значимую роль в образовании, улучшая доступ к знаниям и
+                    повышая их качество. Однако<br>
+                    для эффективного внедрения технологий важно учитывать как их преимущества, так и возможные
+                    риски,<br>
+                    сохраняя баланс между цифровыми инструментами и традиционными методами обучения.
+                </p>
+            </div>
+
+            <div>
+                <img style="border-radius: 16px;" src="images/kling.png" alt="" width="256" height="256">
+                <p>Изображение сгенерированное с помощью <a href="https://klingai.com" target="_blank">klingai.com</a>.</p>
+            </div>
 
             <a class="hf backbtn" onclick="toDisadva()">
                 <img src="images/la-icon.png" alt="" height="32" width="32">
@@ -256,3 +265,7 @@ function toDisadva() {
 function toConcl() {
     document.getElementById('conclusion').click()
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('content').innerHTML = introduction
+})

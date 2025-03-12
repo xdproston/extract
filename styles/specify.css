@@ -57,7 +57,8 @@
 }
 
 main>.introduction,
-main>.use {
+main>.use,
+main>.conclusion {
     gap: 64px;
 }
 
