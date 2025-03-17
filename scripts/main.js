@@ -1,5 +1,7 @@
 introduction = `
         <div id="card" class="card introduction show">
+            <h1>ИИ в образовании</h1>
+
             <div>
                 <h1>Введение</h1>
                 <p>
