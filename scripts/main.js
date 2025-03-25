@@ -96,7 +96,10 @@ use = `
                     target="_blank">chatgpt.com</a>.<br>
                 Для генерация видео и картинок: <a href="https://shedevrum.ai" target="_blank">shedevrum.ai</a>, <a
                     href="https://www.sberbank.com/promo/kandinsky/" target="_blank">kandinsky</a>, <a
-                    href="https://klingai.com" target="_blank">klingai.com</a>.
+                    href="https://klingai.com" target="_blank">klingai.com</a>.<br>
+                Виртуальные учителя: <a href="https://getparla.com/" target="_blank">Parla</a>, <a
+                    href="https://buddy.ai/ru/" target="_blank">buddy.ai</a>, <a href="https://ru.khanacademy.org/"
+                    target="_blank">Khan Academy</a>
             </div>
 
             <a class="hf backbtn" onclick="toAdva()">
